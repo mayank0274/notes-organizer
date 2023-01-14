@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web:wght@600&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      background-color: #ECF0F1;
+      text-align: center;
+font-family: 'Lobster', cursive;
+font-family: 'Titillium Web', sans-serif
+    }
+    .navbar {
+      height: 12rem;
+      background:#FFC107;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    form{
+      width: 70%;
+    }
+    #search{
+      width: 60%;
+      padding: .3rem;
+      background: white;
+      height: 4.3rem;
+      outline: none;
+      border: 1px solid black;
+      font-size: 2.5rem;
+      border-radius: .5rem;
+    }
+    #searcnBtn{
+      height: 4.5rem;
+      width: 25%;
+      background-color: red;
+      border: 1px solid white;
+      outline: none;
+      color: white;
+      border-radius: .7rem;
+      margin: 1rem ;
+      font-size: 2rem;
+    }
+    .heading {
+      font-size: 5rem;
+      width: 50%;
+font-family: 'Lobster', cursive;
+font-family: 'Titillium Web', sans-serif;
+    }
+    i {
+      padding: .8rem;
+      border-radius: 50px;
+      margin: 0 .3rem;
+    }
+    .add {
+      border-radius: 50px;
+      background-color: #fff;
+      box-shadow: .2rem .2rem .5rem .6rem #e3e2e2, -.2rem -.2rem 1rem .3rem #e3e2e2;
+      position: fixed;
+      bottom: 3rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+    .add:hover {
+      background: #5891FF;
+    }
+    .main {
+      border: 1px solid white;
+      border-radius: 1rem;
+       height: 22rem;
+        width: 45vw;
+      margin: 2rem auto;
+      box-shadow: .2rem .2rem .5rem .6rem #e3e2e2, -.2rem -.2rem 1rem .3rem #e3e2e2;
+    }
+    .title {
+width: 45vw;
+        font-size: 2rem;
+      font-weight: bold;
+      
+      border: 1px solid white;
+      border-radius: .3rem;
+      outline: none;
+    }
+    .operation {
+      background: #fff;
+      display: flex;
+      flex-direction: row-reverse;
+      border-radius: .7rem;
+    }
+    .operation i {
+      cursor: pointer;
+
+    }
+    .mainText {
+width: 45vw;
+        height: 16rem;
+        font-size: 2.5rem;
+      border-radius: .7rem;
+      
+      border: 1px solid white;
+      background-color: #fff;
+      outline: none;
+      overflow-y: scroll;
+    }
+    #NoteSectionLayout {
+      display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .navbar p {
+      cursor: pointer;
+      text-align: center;
+    }
+    .default{
+      border: 1px solid black;
+      height: 45rem;
+    }
+    .savebtn{
+      background-color:#05f07b ;
+    }
+    .delete{
+      background-color:#ff3333;
+    }
+    .editBtn{
+      background-color:orange ;
+    }
+    .savebtn:hover,.delete:hover,.editBtn:hover{
+      background-color: white;
+    }
+    
+#eyeIcon,#overlay{
+  display: none;
+}
+
+@media  screen and (max-width:490px){
+     html{
+       font-size: 50%;
+     }
+    .navbar{
+      height: 15rem;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .heading{
+      font-size: 3rem;
+    }
+    form{
+      margin: 1rem;
+    }
+    #search{
+      height: 3rem;
+      width: 100%;
+      font-size: 1.6rem;
+    }
+    #searcnBtn{
+      height: 3rem;
+      font-size: 1.8rem;
+      width:30% ;
+    }
+      #NoteSectionLayout {
+      flex-direction: column;
+      justify-content: center;
+      }
+      .main {
+ height: 17rem;
+      width: 86vw;
+      }
+      .mainText {
+width: 85vw;
+      height: 9rem;
+      font-size: 1.7rem;
+      }
+      .title {
+width: 85vw;
+      height: 4rem;
+      font-size: 1.4rem;
+      }
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+   /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  display:none;
+color: black;
+font-size: 5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background-color: rgba(0,0,0,.7);  Black background with opacity */
+  background-color: #fff;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  overflow-y: scroll;
+}
+#eyeIcon{
+  display: block;
+  background-color: #40d6fc9d;
+}
+#eyeIcon:hover{
+  background-color: white;
+}
+#view_content{
+  font-size: 2rem;
+  border: 1px solid white;
+  padding: 1rem;
+  overflow: auto;
+  display: block;
+  text-align: left;
+}
+.title_view{
+  text-align: left;
+  font-size: 5rem;
+  padding: 1rem;
+}
+#btnClose{
+  color: #fff;
+  width: 100vw;
+  background: red;
+  height: 5rem;
+  font-size: 3.5rem;
+  border: 1px solid black;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+}
+    }
